@@ -9,15 +9,20 @@
 </head>
 
 <body>
-    <form>
+    <form id="validate-form" action="" method="post">
         <fieldset>
             <legend>Payment Form</legend>
+            <p id="message"></p>
             <div class="form-row">
                 <label for="phone_no">Phone no.</label>
-                <input id="phone_no" type="tel" />
+                <p>Enter phone number in this format: <span id="input-info">2547xxxxxxxxx or 2541xxxxxxxxx</span></p>
+                <input id="phone_no" name="phone_no" type="tel" pattern="^254[71]\d{8}$" required />
             </div>
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
+
+    <script src="validate.js"></script>
 </body>
 
 </html>
