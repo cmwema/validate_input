@@ -35,11 +35,6 @@ body > form > fieldset {
   display: block;
 }
 
-input {
-  width: 70%;
-  padding: 0.5rem;
-}
-
 button {
   width: max-content;
   padding: 0.5rem;
@@ -47,4 +42,9 @@ button {
 
 .input-info {
   font-weight: 600;
+}
+
+.form-tel-input {
+  display: flex;
+  width: 100%;
 }

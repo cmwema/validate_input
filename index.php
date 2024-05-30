@@ -9,14 +9,15 @@
 </head>
 
 <body>
-    <form id="validate-form" action="" method="post">
+    <form id="validate-form" action="validate.php" method="post">
         <fieldset>
             <legend>Payment Form</legend>
             <p id="message"></p>
             <div class="form-row">
                 <label for="phone_no">Phone no.</label>
                 <p>Enter phone number in this format: <span id="input-info">2547xxxxxxxxx or 2541xxxxxxxxx</span></p>
-                <input id="phone_no" name="phone_no" type="tel" pattern="^254[71]\d{8}$" required />
+
+                <input id="phone_no" name="phone_no" type="tel" pattern="^254[71]\d{8}$" required maxlength="12" />
             </div>
             <button type="submit">Submit</button>
         </fieldset>
